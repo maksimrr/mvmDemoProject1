@@ -1,0 +1,36 @@
+
+
+<!--Страница, содержащая поля формы для регистрации. Данные поля передаются методом POST сервлета
+ RegistrationServlet с маппингом "/registration"-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>registration page</title>
+</head>
+<body style ="background-color: burlywood;">
+<h1>fill out the form please</h1>
+<form action="/registration" method="post">
+    <label for="first_name">First Name:
+    <input type="text" name="first_name" id="first_name"></label>
+    <br>
+    <label for="last_name">Second Name:
+        <input type="text" name="last_name" id="last_name"></label>
+    <br>
+    <label for="birthday">Birthday:
+        <input type="date" name="birthday" id="birthday"></label>
+    <br>
+    <label for="phone_number">Phone number:
+        <input type="text" name="phone_number" id="phone_number"></label>
+    <br>
+    <label for="email_id">Email:
+        <input type="text" name="email" id="email_id"></label>
+    <br>
+    <label for="adress_id">Adress:
+        <input type="text" name="adress" id="adress_id"></label>
+    <button type="submit" style="font-size: 14px">register</button>
+</form>
+
+</body>
+</html>
